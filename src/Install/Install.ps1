@@ -30,6 +30,8 @@ if(Test-Path $settings.WebAppPath)
         Write-Host $message
         LaunchMsGraphDownload
 
+        $webPath = $settings.WebAppPath
+        $servicePath = $settings.ServicesPath
         #Copy WorkflowGenMsGraph dll
         Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\bin"
         Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\ws\bin"
