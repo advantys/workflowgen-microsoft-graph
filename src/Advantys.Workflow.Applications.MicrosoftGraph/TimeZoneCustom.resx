@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GMT0100AmsterdamBerlinBernRomeStockholmVienna" xml:space="preserve">
+    <value>Europe/Berlin</value>
+  </data>
+  <data name="GMT0100Azores" xml:space="preserve">
+    <value>Atlantic/Azores</value>
+  </data>
+  <data name="GMT0100BelgradeBratislavaBudapestLjubljanaPrague" xml:space="preserve">
+    <value>Europe/Budapest</value>
+  </data>
+  <data name="GMT0100BrusselsCopenhagenMadridParis" xml:space="preserve">
+    <value>Europe/Paris</value>
+  </data>
+  <data name="GMT0100CapeVerdeIs" xml:space="preserve">
+    <value>Atlantic/Cape_Verde</value>
+  </data>
+  <data name="GMT0100SarajevoSkopjeWarsawZagreb" xml:space="preserve">
+    <value>Europe/Warsaw</value>
+  </data>
+  <data name="GMT0100WestCentralAfrica" xml:space="preserve">
+    <value>Europe/Budapest</value>
+  </data>
+  <data name="GMT0200Amman" xml:space="preserve">
+    <value>Asia/Amman</value>
+  </data>
+  <data name="GMT0200AthensIstanbulMinsk" xml:space="preserve">
+    <value>Europe/Istanbul</value>
+  </data>
+  <data name="GMT0200Beirut" xml:space="preserve">
+    <value>Asia/Beirut</value>
+  </data>
+  <data name="GMT0200Bucharest" xml:space="preserve">
+    <value>Europe/Bucharest</value>
+  </data>
+  <data name="GMT0200Cairo" xml:space="preserve">
+    <value>Africa/Cairo</value>
+  </data>
+  <data name="GMT0200HararePretoria" xml:space="preserve">
+    <value>Africa/Cairo</value>
+  </data>
+  <data name="GMT0200HelsinkiKyivRigaSofiaTallinnVilnius" xml:space="preserve">
+    <value>Europe/Kyiv (Kiev)</value>
+  </data>
+  <data name="GMT0200Jerusalem" xml:space="preserve">
+    <value>Asia/Jerusalem</value>
+  </data>
+  <data name="GMT0200MidAtlantic" xml:space="preserve">
+    <value>Africa/Windhoek</value>
+  </data>
+  <data name="GMT0200Windhoek" xml:space="preserve">
+    <value>Africa/Windhoek</value>
+  </data>
+  <data name="GMT0300Baghdad" xml:space="preserve">
+    <value>Asia/Baghdad</value>
+  </data>
+  <data name="GMT0300Brasilia" xml:space="preserve">
+    <value>America/Sao_Paulo</value>
+  </data>
+  <data name="GMT0300BuenosAiresGeorgetown" xml:space="preserve">
+    <value>America/Argentina/Buenos_Aires</value>
+  </data>
+  <data name="GMT0300Greenland" xml:space="preserve">
+    <value>America/Montevideo</value>
+  </data>
+  <data name="GMT0300KuwaitRiyadh" xml:space="preserve">
+    <value>Asia/Riyadh</value>
+  </data>
+  <data name="GMT0300Montevideo" xml:space="preserve">
+    <value>America/Montevideo</value>
+  </data>
+  <data name="GMT0300MoscowStPetersburgVolgograd" xml:space="preserve">
+    <value>Europe/Moscow</value>
+  </data>
+  <data name="GMT0300Nairobi" xml:space="preserve">
+    <value>Africa/Nairobi</value>
+  </data>
+  <data name="GMT0300Tbilisi" xml:space="preserve">
+    <value>Asia/Tbilisi</value>
+  </data>
+  <data name="GMT0330Newfoundland" xml:space="preserve">
+    <value>America/Sao_Paulo</value>
+  </data>
+  <data name="GMT0330Tehran" xml:space="preserve">
+    <value>Asia/Tehran</value>
+  </data>
+  <data name="GMT0400AbuDhabiMuscat" xml:space="preserve">
+    <value>Asia/Yerevan</value>
+  </data>
+  <data name="GMT0400AtlanticTimeCanada" xml:space="preserve">
+    <value>America/Santiago</value>
+  </data>
+  <data name="GMT0400Baku" xml:space="preserve">
+    <value>Asia/Baku</value>
+  </data>
+  <data name="GMT0400CaracasLaPaz" xml:space="preserve">
+    <value>America/Caracas</value>
+  </data>
+  <data name="GMT0400Manaus" xml:space="preserve">
+    <value>America/Santiago</value>
+  </data>
+  <data name="GMT0400Santiago" xml:space="preserve">
+    <value>America/Santiago</value>
+  </data>
+  <data name="GMT0400Yerevan" xml:space="preserve">
+    <value>Asia/Yerevan</value>
+  </data>
+  <data name="GMT0430Kabul" xml:space="preserve">
+    <value>Asia/Kabul</value>
+  </data>
+  <data name="GMT0500BogotaLimaQuitoRioBranco" xml:space="preserve">
+    <value>America/Bogota</value>
+  </data>
+  <data name="GMT0500EasternTimeUSandCanada" xml:space="preserve">
+    <value>America/New_York</value>
+  </data>
+  <data name="GMT0500Ekaterinburg" xml:space="preserve">
+    <value>Asia/Karachi</value>
+  </data>
+  <data name="GMT0500IndianaEast" xml:space="preserve">
+    <value>America/Indiana/Indianapolis</value>
+  </data>
+  <data name="GMT0500IslamabadKarachiTashkent" xml:space="preserve">
+    <value>Asia/Karachi</value>
+  </data>
+  <data name="GMT0530ChennaiKolkataMumbaiNewDelhi" xml:space="preserve">
+    <value>Asia/Kolkata</value>
+  </data>
+  <data name="GMT0545Kathmandu" xml:space="preserve">
+    <value>Asia/Kathmandu</value>
+  </data>
+  <data name="GMT0600AlmatyNovosibirsk" xml:space="preserve">
+    <value>Asia/Astana (Almaty)</value>
+  </data>
+  <data name="GMT0600AstanaDhaka" xml:space="preserve">
+    <value>Asia/Dhaka</value>
+  </data>
+  <data name="GMT0600CentralAmerica" xml:space="preserve">
+    <value>America/Chicago</value>
+  </data>
+  <data name="GMT0600CentralTimeUSandCanada" xml:space="preserve">
+    <value>America/Chicago</value>
+  </data>
+  <data name="GMT0600GuadalajaraMexicoCityMonterrey" xml:space="preserve">
+    <value>America/Mexico_City</value>
+  </data>
+  <data name="GMT0600Saskatchewan" xml:space="preserve">
+    <value>America/Mexico_City</value>
+  </data>
+  <data name="GMT0600SriJayawardenepura" xml:space="preserve">
+    <value>Asia/Dhaka</value>
+  </data>
+  <data name="GMT0630Rangoon" xml:space="preserve">
+    <value>Asia/Yangon (Rangoon)</value>
+  </data>
+  <data name="GMT0700Arizona" xml:space="preserve">
+    <value>America/Chihuahua</value>
+  </data>
+  <data name="GMT0700BangkokHanoiJakarta" xml:space="preserve">
+    <value>Asia/Bangkok</value>
+  </data>
+  <data name="GMT0700ChihuahuaLaPazMazatlan" xml:space="preserve">
+    <value>America/Chihuahua</value>
+  </data>
+  <data name="GMT0700Krasnoyarsk" xml:space="preserve">
+    <value>Asia/Krasnoyarsk</value>
+  </data>
+  <data name="GMT0700MountainTimeUSandCanada" xml:space="preserve">
+    <value>America/Chihuahua</value>
+  </data>
+  <data name="GMT0800BeijingChongqingHongKongUrumqi" xml:space="preserve">
+    <value>Asia/Singapore</value>
+  </data>
+  <data name="GMT0800IrkutskUlaanBataar" xml:space="preserve">
+    <value>Asia/Irkutsk</value>
+  </data>
+  <data name="GMT0800KualaLumpurSingapore" xml:space="preserve">
+    <value>Asia/Singapore</value>
+  </data>
+  <data name="GMT0800PacificTimeUSandCanada" xml:space="preserve">
+    <value>America/Los_Angeles</value>
+  </data>
+  <data name="GMT0800Perth" xml:space="preserve">
+    <value>Australia/Perth</value>
+  </data>
+  <data name="GMT0800Taipei" xml:space="preserve">
+    <value>Asia/Taipei</value>
+  </data>
+  <data name="GMT0800TijuanaBajaCalifornia" xml:space="preserve">
+    <value>America/Los_Angeles</value>
+  </data>
+  <data name="GMT0900Alaska" xml:space="preserve">
+    <value>America/Anchorage</value>
+  </data>
+  <data name="GMT0900OsakaSapporoTokyo" xml:space="preserve">
+    <value>Asia/Tokyo</value>
+  </data>
+  <data name="GMT0900Seoul" xml:space="preserve">
+    <value>Asia/Seoul</value>
+  </data>
+  <data name="GMT0900Yakutsk" xml:space="preserve">
+    <value>Asia/Yakutsk</value>
+  </data>
+  <data name="GMT0930Adelaide" xml:space="preserve">
+    <value>Australia/Adelaide</value>
+  </data>
+  <data name="GMT0930Darwin" xml:space="preserve">
+    <value>Australia/Darwin</value>
+  </data>
+  <data name="GMT1000Brisbane" xml:space="preserve">
+    <value>Australia/Brisbane</value>
+  </data>
+  <data name="GMT1000CanberraMelbourneSydney" xml:space="preserve">
+    <value>Australia/Sydney</value>
+  </data>
+  <data name="GMT1000GuamPortMoresby" xml:space="preserve">
+    <value>Pacific/Port_Moresby</value>
+  </data>
+  <data name="GMT1000Hawaii" xml:space="preserve">
+    <value>Pacific/Honolulu</value>
+  </data>
+  <data name="GMT1000Hobart" xml:space="preserve">
+    <value>Australia/Hobart</value>
+  </data>
+  <data name="GMT1000Vladivostok" xml:space="preserve">
+    <value>Asia/Vladivostok</value>
+  </data>
+  <data name="GMT1100MagadanSolomonIsNewCaledonia" xml:space="preserve">
+    <value>Asia/Magadan</value>
+  </data>
+  <data name="GMT1100MidwayIslandSamoa" xml:space="preserve">
+    <value>Pacific/Honolulu</value>
+  </data>
+  <data name="GMT1200AucklandWellington" xml:space="preserve">
+    <value>Pacific/Auckland</value>
+  </data>
+  <data name="GMT1200FijiIsKamchatkaMarshallIs" xml:space="preserve">
+    <value>Pacific/Fiji</value>
+  </data>
+  <data name="GMT1200InternationalDateLineWest" xml:space="preserve">
+    <value>Etc/GMT-12</value>
+  </data>
+  <data name="GMT1300Nukualofa" xml:space="preserve">
+    <value>Pacific/Fiji</value>
+  </data>
+  <data name="GMTCasablancaMonrovia" xml:space="preserve">
+    <value>Africa/Casablanca</value>
+  </data>
+  <data name="GMTGreenwichMeanTimeDublinEdinburghLisbonLondon" xml:space="preserve">
+    <value>Europe/London</value>
+  </data>
+</root>
