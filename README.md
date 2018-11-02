@@ -2,18 +2,18 @@
 
 ## Overview
 
-You can use [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/docs/concepts/v1-overview) to create some integration points between WorkflowGen and Office 365 applications such Outlook, Excel, Teams, OneDrive, SharePoint and Azure. 
+You can use the [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/docs/concepts/v1-overview) to create integration points between WorkflowGen and Office 365 applications such Outlook, Excel, Teams, OneDrive, SharePoint, and Azure. 
 
 This repository includes the `Advantys.Workflow.Applications.MicrosoftGraph.dll` assembly and the associated Visual Studio project.
-This assembly exposes multiples methods that can be used as WorkflowGen applications for each integration feature.
+This assembly exposes multiple methods that can be used as WorkflowGen applications for each integration feature.
 
-## Content
+## Contents
 
-`docs`: Workflow applications documentation.
+`docs`: Workflow applications documentation
 
-`processes`: Process definition file examples.
+`processes`: Process definition file examples
 
-`src`: Visual Studio solution.
+`src`: Visual Studio solution
 
 ## Prerequisites
 
@@ -21,16 +21,16 @@ This assembly exposes multiples methods that can be used as WorkflowGen applicat
 
 - Access to an Azure portal: https://portal.azure.com/
 
-- Service account with an Office 365 licence (such as `workflowgen@YOUR_DOMAIN.com`)
+- A service account with an Office 365 licence (such as `workflowgen@YOUR_DOMAIN.com`)
 
-- Workflowgen.My.dll 4.2.0 (WorkflowGen 7.10 or later)
+- `Workflowgen.My.dll` 4.2.0 and WorkflowGen Server version 7.10.0 or later
 
 
 ## Installation
 
 ### Application registration
 
-1. Create an application on the https://apps.dev.microsoft.com/ site, such as `WorkflowGen`.
+1. Create an application on the https://apps.dev.microsoft.com/ site (such as `WorkflowGen`).
 
 2. In **Application Secret** section, generate a new password and save the secret.
 
@@ -40,21 +40,25 @@ This assembly exposes multiples methods that can be used as WorkflowGen applicat
 
 5. Each [workflow application](#Workflow-applications-installation) requires specific permissions, so select these in **Application Permissions**, then save the application.
 
-6. To activate permissions, go to the `https://login.microsoftonline.com/YOUR_TENANT_ID/adminconsent?client_id=YOUR_CLIENT_ID&redirect_uri=https://login.microsoftonline.com` URL (replacing `YOUR_TENANT_ID` and `YOUR_CLIENT_ID` with your tenant and client IDs, respectively), and connect using an Administrator account.
+6. To activate permissions, go to the URL `https://login.microsoftonline.com/YOUR_TENANT_ID/adminconsent?client_id=YOUR_CLIENT_ID&redirect_uri=https://login.microsoftonline.com` (replacing `YOUR_TENANT_ID` and `YOUR_CLIENT_ID` with your tenant and client IDs, respectively), and connect using an Administrator account.
 
-### Librairies installation on the WorkflowGen Server
+### Libraries installation on the WorkflowGen Server
 
-The following components will be installed in the WorkflowGen `/bin` folders (`/wfgen/bin`, `/wfgen/ws/bin`, `../Program Files/Advantys/WorkflowGen/Service/bin`):
+The following components will be installed in the WorkflowGen `\bin` folders (`\wfgen\bin`, `\wfgen\ws\bin`, `..\Program Files\Advantys\WorkflowGen\Service\bin`):
+
 - `Advantys.Workflow.Applications.MicrosoftGraph.dll` 
+
 - `Microsoft.Graph.dll`
+
 - `Microsoft.Graph.Core.dll`
+
 - `Microsoft.Identity.Client.dll`
 
 #### Quick Start
 
-1. Download the last release pack on your WorkflowGen server.
+1. Download the last release pack to your WorkflowGen server.
 
-2. Edit the `config.json`, replacing `WebAppPath` and `ServiceAppPath` with your own path (the default values are already specified).
+2. Edit the `config.json` file, replacing `WebAppPath` and `ServiceAppPath` with your own paths (the default values are already specified).
 
 3. Execute the `Install.ps1` script in PowerShell. 
 
@@ -62,17 +66,17 @@ The following components will be installed in the WorkflowGen `/bin` folders (`/
 
 1. Clone the repository.
 
-2. Open the Visual Studio Solution : `WorkflowGenMicrosoftGraph.sln`.
+2. Open the `WorkflowGenMicrosoftGraph.sln` Visual Studio solution.
 
-3. Compile the Solution and copy the `Advantys.Workflow.Applications.MicrosoftGraph.dll` generated to the `src/Install` folder.
+3. Compile the solution and copy the generated `Advantys.Workflow.Applications.MicrosoftGraph.dll` file to the `src/Install` folder.
 
-4. Edit the `config.json`, replacing `WebAppPath` and `ServiceAppPath` with your own path (the default values are already specified).
+4. Edit the `config.json`, replacing `WebAppPath` and `ServiceAppPath` with your own paths (the default values are already specified).
 
 5. Execute the `Install.ps1` script in PowerShell. 
  
 ### WorkflowGen configuration
 
-Add the following settings to the WorkflowGen `/wfgen/web.config` with your own values:
+Add the following settings to the WorkflowGen `\wfgen\web.config` with your own values:
 
 ```xml
 <add key="MicrosoftGraphTenant" value="TENANT_ID" />
@@ -82,20 +86,19 @@ Add the following settings to the WorkflowGen `/wfgen/web.config` with your own 
 <add key="MicrosoftGraphServiceLogPath" value="LOG_PATH" />
 ```
     
-Where:
-* **TENANT_ID**: Your tenant ID, which you can can find in the Azure AD (Directory ID)
+* **`TENANT_ID`**: Your tenant ID, which you can find in Azure AD (Directory ID).
 
-* **CLIENT_ID**: The application ID you created earlier
+* **`CLIENT_ID`**: The application ID you created earlier.
 
-* **CLIENT_SECRET** : The secret password you generated earlier
+* **`CLIENT_SECRET`**: The secret password you generated earlier.
 
-* **SERVICE_ACCOUNT_ID** : Your service account ID, which you can find in the Azure AD account profile (`object id`)
+* **`SERVICE_ACCOUNT_ID`**: Your service account ID, which you can find in the Azure AD account profile (`object id`).
 
-* **LOG_PATH** : The path where the logs will be saved
+* **`LOG_PATH`**: The path where the logs will be saved.
 
 ## Workflow applications installation
 
-All required components are installed, you can now deploy WorkflowGen applications for each desired integration.
+Now that the required components are installed, you can deploy WorkflowGen applications for each integration.
 
 ### [Outlook](https://github.com/advantys/workflowgen-microsoft-graph/tree/master/docs/Outlook)
 
