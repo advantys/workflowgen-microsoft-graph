@@ -56,7 +56,7 @@ The following components will be installed in the WorkflowGen `\bin` folders (`\
 
 #### Quick Start
 
-1. Download the last release pack to your WorkflowGen server.
+1. Download the last [release pack](https://github.com/advantys/workflowgen-microsoft-graph/releases) to your WorkflowGen server.
 
 2. Edit the `config.json` file, replacing `WebAppPath` and `ServiceAppPath` with your own paths (the default values are already specified).
 
