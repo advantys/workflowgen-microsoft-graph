@@ -1,57 +1,4 @@
-﻿if (Test-Path "$PSScriptRoot\config.json"){
-  $settings = (Get-Content "$PSScriptRoot\config.json" -Raw) | ConvertFrom-Json
-}
-else{
-  Write-Host "The configuration file config.json was not found in the present working directory."
-}
-
-#Checking parameter validity
-Write-Host $settings.WebAppPath
-
-if($settings.WebAppPath -eq $null -Or $settings.WebAppPath -eq ""){
-    $message = "Please specify a 'WebAppPath' parameter."
-    Write-Host $message
-    exit 1
-}
-if($settings.ServicesPath -eq $null -Or $settings.ServicesPath -eq ""){
-    $message = "Please specify a 'ServicesPath' parameter in config.json."
-    Write-Host $message
-    exit 1
-}
-
-if(Test-Path $settings.WebAppPath)
-{
-    $message = "WebAppPath valid"
-    Write-Host $message
-
-    if(Test-Path $settings.ServicesPath)
-    {
-        $message = "ServicesPath valid"
-        Write-Host $message
-        LaunchMsGraphDownload
-
-        $webPath = $settings.WebAppPath
-        $servicePath = $settings.ServicesPath
-        #Copy WorkflowGenMsGraph dll
-        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\bin"
-        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\ws\bin"
-        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$servicePath\bin"
-    }
-    else
-    {
-        $message = "ServicesPath not valid, folder not found. Please correct it in config.json"
-        Write-Host $message
-        exit 1
-    }
-}
-else
-{
-    $message = "WebAppPath not valid, folder not found. Please correct it in config.json"
-    Write-Host $message
-    exit 1
-}
-
-function LaunchMsGraphDownload
+﻿function LaunchMsGraphDownload
 {
     $url = "https://dist.nuget.org/win-x86-commandline/v4.8.1/nuget.exe"
     $output = "$PSScriptRoot\nuget.exe"
@@ -88,3 +35,57 @@ function LaunchMsGraphDownload
     Remove-Item $output
     Remove-Item $workingFolder -Force -Recurse
 }
+
+
+
+if (Test-Path "$PSScriptRoot\config.json"){
+  $settings = (Get-Content "$PSScriptRoot\config.json" -Raw) | ConvertFrom-Json
+}
+else{
+  Write-Host "The configuration file config.json was not found in the present working directory."
+}
+
+#Checking parameter validity
+Write-Host $settings.WebAppPath
+
+if($settings.WebAppPath -eq $null -Or $settings.WebAppPath -eq ""){
+    $message = "Please specify a 'WebAppPath' parameter."
+    Write-Host $message
+    exit 1
+}
+if($settings.ServicesPath -eq $null -Or $settings.ServicesPath -eq ""){
+    $message = "Please specify a 'ServicesPath' parameter in config.json."
+    Write-Host $message
+    exit 1
+}
+
+if(Test-Path $settings.WebAppPath)
+{
+    $message = "WebAppPath valid"
+    Write-Host $message
+
+    if(Test-Path $settings.ServicesPath)
+    {
+        $message = "ServicesPath valid"
+        Write-Host $message
+        LaunchMsGraphDownload
+
+        #Copy WorkflowGenMsGraph dll
+        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\bin"
+        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$webPath\ws\bin"
+        Copy-Item "$PSScriptRoot\Advantys.Workflow.Applications.MicrosoftGraph.dll" -Destination "$servicePath\bin"
+    }
+    else
+    {
+        $message = "ServicesPath not valid, folder not found. Please correct it in config.json"
+        Write-Host $message
+        exit 1
+    }
+}
+else
+{
+    $message = "WebAppPath not valid, folder not found. Please correct it in config.json"
+    Write-Host $message
+    exit 1
+}
+
